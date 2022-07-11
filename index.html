@@ -7,39 +7,17 @@
 	</head>
 		
 	<body>
-		<h2>Produtos</h2>
+		<h2>Login</h2>
 
-		<table border="2" width="100%"><!--colocando mais atributod width -->
+		<form><!-- para criar os formulários, caixa de textos, botões etc..-->
+			Login:<br>
+			<input type="text" name="login"><br><!--name para recuperar e tratar com a linguagem de programação -->
 
-			<tr><!-- <tr> = table row "linha da tabela"-->
-				<th>Código</th><!-- <th> = table hearder "cabeçalho" da tabela-->
-				<th>Produto</th>
-				<th>Preço</th>
-			</tr>
-				<td>001</td><!-- <td> = table data "definir os dados da tabela"-->
-				<td>Notebook</td>
-				<td>R$ 2.500,99</td>
-			<tr>
-
-			</tr>
-				<td>002</td>
-				<td>Tablet</td>
-				<td>R$ 999,99</td>
-			<tr>
-
-			<tr>
-				<td rowspan="2">Desconto</td><!--rowspan = "extensão da linha" colocando 2 para ocupar 2 linhas de baixo-->
-				<td colspan="2">cupom1 -R$ 10</td><!--colsaon = "extensão de coluna" colocando 2 vai ocupar dois espaços-->
-			</tr>
-
-			<tr>
-				<td colspan="2">cupom2 -R$ 12</td>
-			</tr>
+			Senha:<br>
+			<input type="password" name="senha"><br>
 			
-			<tr>
-				<td>Total:</td>
-				<td colspan="2">R$ 3.478,98</td>
-			</tr>
-		</table>
+			<input type="button" value="Logar"><!--colocando o value para definir o nome do "botão"-->
+		</form>
+
 	</body>
 </html>
