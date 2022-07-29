@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Seletores CSS</title>
+		<title>Classes e Ids</title>
 
 		<style type="text/css">
 			h1{
@@ -11,12 +11,30 @@
 			p{
 				color: red;
 			}
+
+			.azul { 
+				color: blue;
+			}
+
+			#cabeçalho{
+				background: silver;
+			}
+
 		</style>
+	</head>
 		<body>
+			<div>
+				<div id="cabeçalho"><!--id usando #cabeçalho e deixando a cor silver-->
+					<li>home</li>
+					<li>Tell</li>
+					<li>Contato</li>
+				</div>
+			</div>
 
-			<h1>Estilo CSS (cascading style sheets)</h1>
+			<h1 class="azul">Estilo CSS (cascading style sheets)</h1><!--class usando .azul e deixando a cor azul-->
 
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> <!--Estilo Inline muda a cor com style="color: 'cor';"-->
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 		</body>
 </html>
