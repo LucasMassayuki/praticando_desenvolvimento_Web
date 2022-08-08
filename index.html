@@ -2,29 +2,38 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Tamanho de textos</title>
+		<title>Estilos de textos</title>
 		<style type="text/css">
-
-		body{
-			font-size: 30px;
-		}
-		.texto{
-			/*
-			px -> tamanho fixo
-			% -> tamanho relativo
-			em -> tamanho relativo ao container pai
-			*/
-			fint-size: 2em;
-		}
-		.texto2{
-			font-size: 1.5em;
-		}
+			body{
+				font-size: 40px;
+				font-family: "Times New Roman",
+					Times, serif;
+			}
+			.negrito{
+				/* normal, bold, 100 até 900 */
+				font-weight: 900;
+			}
+			.italico{
+				font-style: italic;
+			}
+			.formatacao{
+				/*text-decoration: underline;*/
+				/*text-decoration: overline;*/
+				text-decoration: line-through;
+			}
+			.texto{
+				font: bold 40px "Lucida Sans Unicode"
+				, "Lucida Grande", sans-serif;
+			}
 		</style>
+
 	</head>
-		<body>
-			<div>
-				<p class="texto">Conteúdo</p>
-				<p class="texto2">Conteúdo</p>
-			</div>
-		</body>
+	<body>
+		<p class="negrito">Texto negrito</p>
+		<p class="italico">Texto itálico</p>
+		<p class="formatacao">Formatação de texto</p>
+		<p class="texto">Texto</p>
+		<p>padrão</p>
+
+	</body>
 </html>
