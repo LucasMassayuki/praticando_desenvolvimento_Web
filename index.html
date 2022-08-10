@@ -2,38 +2,41 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Estilos de textos</title>
+		<title>Cor e imagem de fundo</title>
 		<style type="text/css">
-			body{
-				font-size: 40px;
-				font-family: "Times New Roman",
-					Times, serif;
-			}
-			.negrito{
-				/* normal, bold, 100 até 900 */
-				font-weight: 900;
-			}
-			.italico{
-				font-style: italic;
-			}
-			.formatacao{
-				/*text-decoration: underline;*/
-				/*text-decoration: overline;*/
-				text-decoration: line-through;
-			}
-			.texto{
-				font: bold 40px "Lucida Sans Unicode"
-				, "Lucida Grande", sans-serif;
-			}
-		</style>
 
+			/*
+			.fundo{
+				background-color: blue;
+			}*/
+
+			body{
+				background-image: url('imagens/yoshi.png');
+
+				/* repeat-x, repat-y, no-repeat, repeat */
+				background-repeat: no-repeat;
+
+				/*scrool , fixed*/
+				background-attachment: fixed;
+
+				/*Primeiro valor:  left, center, right
+				segundo valor:  top, center, bottom*/
+				background-position: center bottom;
+			}
+
+			.fundo{
+				background: blue url('imagens/yoshi.png') repeat-x scroll top;
+			}
+
+		</style>
 	</head>
-	<body>
-		<p class="negrito">Texto negrito</p>
-		<p class="italico">Texto itálico</p>
-		<p class="formatacao">Formatação de texto</p>
-		<p class="texto">Texto</p>
-		<p>padrão</p>
+	<body class="fundo">
+
+		<h1 >Conteúdo de título 1</h1>
+		<p>
+Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).'
+</p>
 
 	</body>
 </html>
