@@ -2,42 +2,83 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Elementos flutuantes 2</title>
-
+		<title>Elementos flutuantes na prática</title>
 		<style type="text/css">
+			body{
+				background: #f4f4f4;
+			}
 			#principal{
-				border: 5px solid red;
-				background: green;
+				width: 920px;
 			}
-
-			.conteudo{
-				background: blue;
-				border: 1px solid gray;
-				width: 200px;
-				height: 200px;
-				margin: 10px;
-				float: right;
+			.noticia{
+				background: #e5e5e5;
+				padding: 5px;
+				width: 280px;
+				margin: 7px;
+				float: left;
 			}
-
+			.imagem-galeria{
+				background: white;
+				width: 265px;
+				padding: 5px;
+				margin: 5px;
+				float: left;
+			}
 			.clear{
 				clear: both;
 			}
+			
 		</style>
 	</head>
 	<body>
-		<div id="principal">
-			<div class="conteudo">
-				Conteúdo 1
+		<div id="principal"><!-- inicio principal-->
+			
+				<div class="noticia"><!-- inicio noticia-->
+					<h2>Notícia 1</h2>
+					<p>
+						Treinando muito para criar um site 
+					</p>
+					<a href="">Veja mais</a>
+				</div>
+				<div class="noticia">
+					<h2>Notícia 2</h2>
+					<p>
+						Treinando muito para criar um site 
+					</p>
+					<a href="">Veja mais</a>
+				</div>	
+				<div class="noticia">
+					<h2>Notícia3</h2>
+					<p>
+						Treinando muito para criar um site 
+					</p>
+					<a href="">Veja mais</a>
+				</div><!-- fim noticia-->
+
+			<div class="clear"></div>
+
+			<div> 
+				<div class="imagem-galeria">
+					<img src="imagens/imagem1.png">
+					<p>resumo</p>
+				</div>
+				<div class="imagem-galeria">
+					<img src="imagens/imagem2.png">
+					<p>resumo</p>
+				</div>
+				<div class="imagem-galeria">
+					<img src="imagens/imagem3.png">
+					<p>resumo</p>
+				</div>
+				<div class="imagem-galeria">
+					<img src="imagens/imagem4.png">
+					<p>resumo</p>
+				</div>
+				<div class="imagem-galeria">
+					<img src="imagens/imagem5.png">
+					<p>resumo</p>
+				</div>
 			</div>
-			<div class="conteudo">
-				Conteúdo 2
-			</div>
-			<div class="conteudo">
-				Conteúdo 3
-			</div>
-			<p class="clear">
-				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-			</p>
-		</div>
+		</div><!-- fim principal-->
 	</body>
 </html>
