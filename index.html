@@ -2,27 +2,45 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Elementos inline, block e inline-block</title>
+		<title>Posicionamentos (static, relative, absolute e fixed)</title>
 		<style type="text/css">
-			
-			.borda{
-				border: 1px solid red;
-				display: inline-block;
+			body{
+				background: #007fc7;
 			}
+			#conteiner{
+				background: #fff;
+				width: 800px;
+				margin: 10px auto;
+			}
+			h1{
+				
 
+			}
+			p{
+				width: 300px;
+			}
+			.relative{
+				border: 1px solid red;
+				position: relative;
+				/* top, rigth, bottom e left */
+				/*top: 20px;
+				left: 80px;*/
+				bottom: -20px;
+			}
 		</style>
-
 	</head>
 	<body>
-		<span class="borda">
-			inline 1 
-			What is Lorem Ipsum?
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-		</span>
-		<span class="borda">
-			inline 2 
-		</span>
-		<!--<div class="borda"> class="borda">Bloco 1</div>
-		<div class="borda">Bloco 2</div>-->
+		<div id="conteiner">
+			<h1>Posicionamentos</h1>
+			<p>
+				P1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+			</p>
+			<p class="relative">
+				P2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+			</p>
+			<p>
+				P3 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+			</p>
+		</div>
 	</body>
 </html>
