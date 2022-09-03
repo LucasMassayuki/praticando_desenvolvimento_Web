@@ -2,61 +2,49 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Posicionamentos (static, relative, absolute e fixed)</title>
+		<title>Sobrepondo elementos</title>
 		<style type="text/css">
-			body{
-				background: #007fc7;
-			}
-			#conteiner{
-				background: #fff;
-				width: 800px;
-				margin: 10px auto;
-				position: relative;
-			}
-			h1{
-				
-
-			}
-			p{
-				width: 300px;
-			}
-			.fixed{
+			.conteudo1{
 				border: 1px solid red;
-				background: #f2f2f2;
-				margin: 0px;
-				position: fixed;
-				bottom: 0px;
-				right: 0px;
+				background: orange;
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				z-index: 2;/*sobrepondo elementos*/
 			}
-			.absolute{
+			.conteudo2{
 				border: 1px solid red;
-				background: #f2f2f2;
+				background: green;
+				width: 200px;
+				height: 200px;
 				position: absolute;
 				top: 80px;
-				right: 80px;
+				left: 80px;
+				z-index: 3;
 			}
-			.relative{
+			.conteudo3{
 				border: 1px solid red;
-				position: relative;
-				/* top, rigth, bottom e left */
-				/*top: 20px;
-				left: 80px;*/
-				bottom: -20px;
+				background: yellow;
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				top: 160px;
+				left: 160px;
+				z-index: 1;
 			}
 		</style>
 	</head>
 	<body>
-		<div id="conteiner">
-			<h1>Posicionamentos</h1>
-			<p>
-				P1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-			</p>
-			<p class="fixed">
-				P2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-			</p>
-			<p>
-				P3 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-			</p>
+
+		<div class="conteudo1">
+			Conteudo 1
 		</div>
+		<div class="conteudo2">
+			Conteudo 2
+		</div>
+		<div class="conteudo3">
+			Conteudo 3
+		</div>
+
 	</body>
 </html>
