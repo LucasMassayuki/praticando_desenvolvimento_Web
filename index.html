@@ -2,49 +2,36 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Sobrepondo elementos</title>
+		<title>Formatando Links</title>
 		<style type="text/css">
-			.conteudo1{
-				border: 1px solid red;
-				background: orange;
-				width: 200px;
-				height: 200px;
-				position: absolute;
-				z-index: 2;/*sobrepondo elementos*/
+			a{
+				padding: 5px 10px;
+				text-decoration: none;
 			}
-			.conteudo2{
-				border: 1px solid red;
-				background: green;
-				width: 200px;
-				height: 200px;
-				position: absolute;
-				top: 80px;
-				left: 80px;
-				z-index: 3;
+
+			/*Links não Visitados*/
+			a:link{
+				color: #b9c941;
 			}
-			.conteudo3{
-				border: 1px solid red;
-				background: yellow;
-				width: 200px;
-				height: 200px;
-				position: absolute;
-				top: 160px;
-				left: 160px;
-				z-index: 1;
+			/*Links Visitados*/
+			a:visited{
+				color: #c0c0c0;
+			}
+			/*Links Hover, passa o cursor sobre o link*/
+			a:hover{
+				color: #fff;
+				background: #6d790f;
+			}
+			/*Links Ativos, quando clicado*/
+			a:active{
+				color: #e4f371;
 			}
 		</style>
 	</head>
 	<body>
-
-		<div class="conteudo1">
-			Conteudo 1
-		</div>
-		<div class="conteudo2">
-			Conteudo 2
-		</div>
-		<div class="conteudo3">
-			Conteudo 3
-		</div>
-
+		<a href="www.google.com.br">Google</a> |
+		<a href="www.tecmundo.com.br">Tec Mundo</a> |
+		<a href="www.yhdm.com.br">Yhdm</a> |
+		<a href="www.megacurioso.com.br">Mega Curioso</a> 
 	</body>
 </html>
