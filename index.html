@@ -2,36 +2,38 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Formatando Links</title>
-		<style type="text/css">
-			a{
-				padding: 5px 10px;
-				text-decoration: none;
-			}
-
-			/*Links não Visitados*/
-			a:link{
-				color: #b9c941;
-			}
-			/*Links Visitados*/
-			a:visited{
-				color: #c0c0c0;
-			}
-			/*Links Hover, passa o cursor sobre o link*/
-			a:hover{
-				color: #fff;
-				background: #6d790f;
-			}
-			/*Links Ativos, quando clicado*/
-			a:active{
-				color: #e4f371;
-			}
-		</style>
+		<title>Seletores</title>
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	</head>
 	<body>
-		<a href="www.google.com.br">Google</a> |
-		<a href="www.tecmundo.com.br">Tec Mundo</a> |
-		<a href="www.yhdm.com.br">Yhdm</a> |
-		<a href="www.megacurioso.com.br">Mega Curioso</a> 
+
+		<ul>
+			<li>
+				<a href="">Home</a>
+			</li>
+			<li>
+				<a href="">Sobre</a>
+			</li>
+		</ul>
+
+		<a href="">Link teste</a>
+
+		<div>
+			<h2>Título</h2>
+			<p>
+				Esse é um parágrafo
+				<a href="">clique aqui</a>
+		    </p>
+		</div>
+		
+
+		<div id="cabecalho">
+			<h1>Titulo da pagina</h1>
+			<p>Parágrafo 1 da página</p>
+			<p>Parágrafo 2 da página</p>
+		</div>
+
+		<span class="verde">teste span</span>
+		<p class="verde">teste parágrafo</p>
 	</body>
 </html>

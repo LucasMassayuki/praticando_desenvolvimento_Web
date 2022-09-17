@@ -1,20 +1,51 @@
-/*
-Modelo de caixa
-*/
-.conteudo {
+/****
+Seletor universal***
+* {
 	border: 1px solid red;
-	/*padding-top: 10px;
-	padding-right: 20px;
-	padding-left: 20px;*/
+}*/
 
-	/*padding: 20px 15px 10px 5px;*/ 
-	padding: 20px;
+/****
+ * Seletor de texto
+ 	color: green;
+ }*/
 
-	/*margin-top: 20px;
-	margin-right: 20px;
-	margin-left: 20px;
-	margin-bottom: 20px;*/
-	margin: 10px;
+ /****
+ Seletor de classe 
+ .verde{
+ 	color: green;
+ } 
 
-	width: 150px;
+ p .verde{
+ 	color: green;
+ }*/
+
+ /****
+ Seletor de ID 
+ #cabecalho {
+ 	border: 1px solid blue;
+ }*/
+
+/****
+ * Seletor de filho 
+ li>a{
+ 	color: red;
+ 	text-decoration: none;
+ }*/
+
+ /****
+ Seletor de descendente 
+div a{
+ 	color: green;
+ }*/
+
+ /****
+ Seletor de irmão adjacente 
+ h1+p{
+ 	color: red;
+ }*/
+
+ /****
+ Seletor de irmão geral */
+ h1~p{
+	color: pink;
 }
