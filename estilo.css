@@ -1,51 +1,31 @@
-/****
-Seletor universal***
-* {
-	border: 1px solid red;
-}*/
+/******
+ Herença e especificidade
+ ******/
 
-/****
- * Seletor de texto
- 	color: green;
- }*/
+/*Seletores iguais, exceção important
+#pagina p {
+    color: red !important;
+}
 
- /****
- Seletor de classe 
- .verde{
- 	color: green;
- } 
+#pagina p {
+    color: blue;
+} */
 
- p .verde{
- 	color: green;
- }*/
+/*Se um seletor for mais específico que outro a regra mais específica será aplicada
+(terá preced~encia sobre regras mais gerais)
+*/
+*{
+    color: red;
+}
 
- /****
- Seletor de ID 
- #cabecalho {
- 	border: 1px solid blue;
- }*/
+h2{/*3*/
+    color: blue;
+}
 
-/****
- * Seletor de filho 
- li>a{
- 	color: red;
- 	text-decoration: none;
- }*/
+h2.verde{/*2*/
+    color: green;
+}
 
- /****
- Seletor de descendente 
-div a{
- 	color: green;
- }*/
-
- /****
- Seletor de irmão adjacente 
- h1+p{
- 	color: red;
- }*/
-
- /****
- Seletor de irmão geral */
- h1~p{
-	color: pink;
+h2#amarelo{/*1*/
+    color: yellow;
 }
