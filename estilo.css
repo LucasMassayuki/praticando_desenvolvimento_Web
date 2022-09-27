@@ -36,5 +36,12 @@ ul a {
 
 a:hover {
     background-position: right bottom; /*quando passar a seta por cima se movimenta */
-    color: white; 
+    background-color: #f99200;
+    color: #fff; 
+}
+
+#home #navegacao .home a{
+    background-position: right bottom; /*quando passar a seta por cima se movimenta */
+    background-color: #f99200;
+    color: #fff; 
 }
