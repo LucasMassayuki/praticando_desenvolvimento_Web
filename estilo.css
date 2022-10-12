@@ -1,38 +1,66 @@
 /*******
- Barra de navegação com abas */
- body{
-   font-family: "Trebuchet MS", Helvetica, sans-serif;
+Layouts */
+
+body{
+   font-family: "Trebuchet MS", Helveyica, sans-serif;
+   background: #f2f2f2;
 }
 
-ul{
-   margin: 0;
-   padding: 0;
-   list-style: none;
+#conteiner{
    width: 720px;
+   margin: 0 auto; /*auto para as lateirais para centralizar*/
+   background: #fff;
 }
 
-ul li{
-   float: left; 
-   background: url(../imagens/aba-direita.png) no-repeat top right;
+#marca{
+   height: 100px;
+   background: #9E9E9E;
+   text-align: center;
+   line-height: 100px;
 }
 
-li a {
-   display: block;
-   padding: 0 2em;
-   line-height: 3em;
-   text-decoration: none;
-   background: url(../imagens/aba-esquerda.png) no-repeat top left;
-   color: #fff;
+#conteudo{
+   width: 520px;
+   float: right;
 }
 
-ul a:hover{
-   color: #894a1f;
+#conteudo-secundario{
+   width: 180px;
+   float: right;
+   background: #d1d1d1;
 }
 
-ul #atual {
-   background: url(../imagens/aba-direita-atual.png) no-repeat top right;
+#conteudo-principal{
+   width: 320px;
+   float: left;
 }
 
-ul #atual a{
-   background: url(../imagens/aba-esquerda-atual.png) no-repeat top left;
+#conteudo-secundario h1,
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p{
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+#navegacao{
+   width: 180px;
+   float: left;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   background: #d1d1d1;
+}
+
+#navegacao ul {
+   list-style: none; /*sem os pontos*/
+}
+
+#navegacao ul a {
+   text-decoration: none; /*sem as linhas*/
+}
+
+#rodape {
+   clear: both; /*fica pra baixo do float*/
+   background: #c4c4c4;
+   padding: 5px;
 }
