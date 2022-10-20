@@ -7,12 +7,15 @@ body{
 }
 
 #conteiner{
-   width: 720px;
+   width: 85%;/*720px*/
    margin: 0 auto; /*auto para as lateirais para centralizar*/
    background: #fff;
+   min-width: 720px;/*conteúdo não vai sair das areas*/
+   max-width: 1280px;/*max de tamanho que vai estender*/
 }
 
 #marca{
+   width: 100%;
    height: 100px;
    background: #9E9E9E;
    text-align: center;
@@ -20,19 +23,27 @@ body{
 }
 
 #conteudo{
-   width: 520px;
+   width: 75%;/*520px*/
    float: right;
 }
 
-#conteudo-secundario{
-   width: 180px;
-   float: right;
+#navegacao{
+   width: 23%;/*180*/
+   float: left;
+   padding-top: 20px;
+   padding-bottom: 20px;
    background: #d1d1d1;
 }
 
 #conteudo-principal{
-   width: 320px;
+   width: 63%;/*320px*/
    float: left;
+}
+
+#conteudo-secundario{
+   width: 34%;/*180*/
+   float: right;
+   background: #d1d1d1;
 }
 
 #conteudo-secundario h1,
@@ -41,14 +52,6 @@ body{
 #conteudo-secundario p{
    padding-left: 20px;
    padding-right: 20px;
-}
-
-#navegacao{
-   width: 180px;
-   float: left;
-   padding-top: 20px;
-   padding-bottom: 20px;
-   background: #d1d1d1;
 }
 
 #navegacao ul {
@@ -64,3 +67,4 @@ body{
    background: #c4c4c4;
    padding: 5px;
 }
+
