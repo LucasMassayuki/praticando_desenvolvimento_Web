@@ -16,11 +16,16 @@ body{
 
 #marca{
    width: 100%;
-   height: 100px;
-   background: #9E9E9E;
+   height: 200px;
+   background: #225992 url(../imagens/cabecalho2.jpg) no-repeat center;
    text-align: center;
-   line-height: 100px;
+   line-height: 200px;
 }
+/*
+#imagem{
+   width: 90%;
+   overflow: hidden;/*não utrapassar as areas da iamgem
+}*/
 
 #conteudo{
    width: 75%;/*520px*/
@@ -38,6 +43,12 @@ body{
 #conteudo-principal{
    width: 63%;/*320px*/
    float: left;
+}
+
+img.img-noticia{
+   width: 94%;
+   padding: 2%;
+   max-width: 600px;
 }
 
 #conteudo-secundario{
@@ -67,4 +78,5 @@ body{
    background: #c4c4c4;
    padding: 5px;
 }
+
 
