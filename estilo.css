@@ -7,9 +7,9 @@ body{
 }
 
 #conteiner{
-   width: 85%;/*720px*/
+   width: 970px;/*deixando a largura fixa*/
    margin: 0 auto; /*auto para as lateirais para centralizar*/
-   background: #fff;
+   background: #fff url(../imagens/coluna.png) repeat-y left top;
    min-width: 720px;/*conteúdo não vai sair das areas*/
    max-width: 1280px;/*max de tamanho que vai estender*/
 }
@@ -37,7 +37,7 @@ body{
    float: left;
    padding-top: 20px;
    padding-bottom: 20px;
-   background: #d1d1d1;
+   /*background: #d1d1d1;*/
 }
 
 #conteudo-principal{
@@ -78,5 +78,6 @@ img.img-noticia{
    background: #c4c4c4;
    padding: 5px;
 }
+
 
 
