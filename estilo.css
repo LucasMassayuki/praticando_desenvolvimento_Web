@@ -1,82 +1,37 @@
 /*******
-Layouts */
-
+Estilizando tabelas */
 body{
-   font-family: "Trebuchet MS", Helveyica, sans-serif;
-   background: #f2f2f2;
+   font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
-#conteiner{
-   width: 970px;/*deixando a largura fixa*/
-   margin: 0 auto; /*auto para as lateirais para centralizar*/
-   background: #fff url(../imagens/coluna.png) repeat-y left top;
-   min-width: 720px;/*conteúdo não vai sair das areas*/
-   max-width: 1280px;/*max de tamanho que vai estender*/
+table{
+ width: 600px;  
+ border-collapse: separate;/*separate deixa espaço de 2px e "collapse" deixa a linha encostada*/
 }
 
-#marca{
-   width: 100%;
-   height: 200px;
-   background: #225992 url(../imagens/cabecalho2.jpg) no-repeat center;
-   text-align: center;
-   line-height: 200px;
-}
-/*
-#imagem{
-   width: 90%;
-   overflow: hidden;/*não utrapassar as areas da iamgem
-}*/
-
-#conteudo{
-   width: 75%;/*520px*/
-   float: right;
+th, td{
+   padding: 7px;
 }
 
-#navegacao{
-   width: 23%;/*180*/
-   float: left;
-   padding-top: 20px;
-   padding-bottom: 20px;
-   /*background: #d1d1d1;*/
+th{
+   text-transform: uppercase; /*deixando todas as letras em Maiúsculas*/
+   border-top: 1px solid #999;
+   border-bottom: 1px solid #111;
+   text-align: left;
+   font-size: 90%;
+   letter-spacing: 0.1em;/*espaço ebtre as letras*/
 }
 
-#conteudo-principal{
-   width: 63%;/*320px*/
-   float: left;
+tr.alternado{
+   background-color: #efefef;
 }
 
-img.img-noticia{
-   width: 94%;
-   padding: 2%;
-   max-width: 600px;
+tr:hover{
+   background-color: #c3e6e5;
 }
 
-#conteudo-secundario{
-   width: 34%;/*180*/
-   float: right;
-   background: #d1d1d1;
-}
-
-#conteudo-secundario h1,
-#conteudo-secundario h2,
-#conteudo-secundario h3,
-#conteudo-secundario p{
-   padding-left: 20px;
-   padding-right: 20px;
-}
-
-#navegacao ul {
-   list-style: none; /*sem os pontos*/
-}
-
-#navegacao ul a {
-   text-decoration: none; /*sem as linhas*/
-}
-
-#rodape {
-   clear: both; /*fica pra baixo do float*/
-   background: #c4c4c4;
-   padding: 5px;
+.numero{
+   text-align: right;
 }
 
 
