@@ -2,45 +2,59 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Estilizando tabelas</title>
+		<title>Estilizando formulários</title>
 
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	</head>
 	<body>
 
-		<h2>Estilizando tabelas</h2>
-		<table>
+		<h2>Estilizando formulários</h2>
+		<form>
+			
+			<fieldset> <!-- é usado para agrupar elementos-->
+				<legend>Detelhes de contato</legend>
 
-			<tr>
-				<th>Código</th>
-				<th>Produto</th>
-				<th class="numero">Preço</th>
-			</tr>
+				<div>
+					<label for="nome">Nome</label>
+					<input type="text" name="nome" id="nome">
+				</div>
 
-			<tr>
-				<td>001</td>
-				<td>Notebook</td>
-				<td class="numero">R$ 2.500</td>
-			</tr>
+				<div>
+					<label for="email">Email</label>
+					<input type="text" name="email" id="email">
+				</div>
 
-			<tr class="alternado">
-				<td>002</td>
-				<td>Tablet</td>
-				<td class="numero">R$ 1.500</td>
-			</tr>
+				<div>
+					<label for="url">URL</label>
+					<input type="text" name="url" id="url">
+				</div>
+				
+			</fieldset>
 
-			<tr>
-				<td>003</td>
-				<td>Iphone</td>
-				<td class="numero">R$ 3.500</td>
-			</tr>
+			<fieldset>
+				<legend>Comentários</legend>
+				<div>
+					<label for="mensagem">Mensagem</label>
+					<textarea name="mensagem" id="mensagem"></textarea>
+				</div>
 
-			<tr class="alternado">
-				<td>004</td>
-				<td>Nexus</td>
-				<td class="numero">R$ 3.500</td>
-			</tr>
+			</fieldset>
 
-		</table>
+			<fieldset>
+				<legend>Lembrar de mim</legend>
+				<div>
+					<label>
+						<input class="radio" type="radio" name="lembrar" id="sim">Sim
+					</label>
+				</div>
+				<div>
+					<label>
+						<input class="radio" type="radio" name="lembrar" id="nao">Não
+					</label>
+				</div>
+			</fieldset>
+
+		</form>
+
 	</body>
 </html>

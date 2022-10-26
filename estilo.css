@@ -1,37 +1,40 @@
 /*******
-Estilizando tabelas */
+Estilizando formulários */
 body{
-   font-family: "Trebuchet MS", Helvetica, sans-serif;
+   font-family: "Trebuchet MS", helvetica, sans-serif;
 }
 
-table{
- width: 600px;  
- border-collapse: separate;/*separate deixa espaço de 2px e "collapse" deixa a linha encostada*/
+fieldset{
+   margin: 1em 0;
+   padding: 1em;
+   border: 1px solid #ccc;
+   background: #f8f8f8;
 }
 
-th, td{
-   padding: 7px;
+legend{
+   font-weight: bold;
 }
 
-th{
-   text-transform: uppercase; /*deixando todas as letras em Maiúsculas*/
-   border-top: 1px solid #999;
-   border-bottom: 1px solid #111;
-   text-align: left;
-   font-size: 90%;
-   letter-spacing: 0.1em;/*espaço ebtre as letras*/
+label{
+   display: block;
+   cursor: pointer;
 }
 
-tr.alternado{
-   background-color: #efefef;
+input{
+   width: 20em;
 }
 
-tr:hover{
-   background-color: #c3e6e5;
+textarea{
+   width: 20em;
+   height: 10em;
 }
 
-.numero{
-   text-align: right;
+input.radio, input.checkbox,input.submit{
+   width: auto;
+}
+
+.radio{
+   margin-right: 1em;
 }
 
 
