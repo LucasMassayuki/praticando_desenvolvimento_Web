@@ -2,59 +2,30 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Estilizando formulários</title>
+		<title>Estilizando formulários parte 2</title>
 
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	</head>
 	<body>
 
-		<h2>Estilizando formulários</h2>
-		<form>
-			
-			<fieldset> <!-- é usado para agrupar elementos-->
-				<legend>Detelhes de contato</legend>
+		<div id="conteiner">
 
+			<img src="imagens/perfil.png">
+
+			<form>
 				<div>
-					<label for="nome">Nome</label>
-					<input type="text" name="nome" id="nome">
+					<input class="email" type="type" name="email" id="email" placeholder="Digite seu email">
 				</div>
 
 				<div>
-					<label for="email">Email</label>
-					<input type="text" name="email" id="email">
+					<input class="senha" type="password" name="senha" id="senha" placeholder="Digite sua senha">
 				</div>
 
 				<div>
-					<label for="url">URL</label>
-					<input type="text" name="url" id="url">
+					<input class="submit" type="submit" value="Logar">
 				</div>
-				
-			</fieldset>
-
-			<fieldset>
-				<legend>Comentários</legend>
-				<div>
-					<label for="mensagem">Mensagem</label>
-					<textarea name="mensagem" id="mensagem"></textarea>
-				</div>
-
-			</fieldset>
-
-			<fieldset>
-				<legend>Lembrar de mim</legend>
-				<div>
-					<label>
-						<input class="radio" type="radio" name="lembrar" id="sim">Sim
-					</label>
-				</div>
-				<div>
-					<label>
-						<input class="radio" type="radio" name="lembrar" id="nao">Não
-					</label>
-				</div>
-			</fieldset>
-
-		</form>
+			</form>
+		</div>
 
 	</body>
 </html>
